@@ -1,0 +1,7 @@
+connect()
+edit()
+startEdit()
+cd('/Servers/AdminServer')
+set('OutboundEnabled','true')
+save()
+activate()

@@ -1,0 +1,7 @@
+connect('weblogic','weblogic','t3://localhost:7001')
+edit()
+startEdit()
+cd('JMX/MynewDomain')
+cmo.setInvocationTimeoutSeconds(25)
+save()
+activate()

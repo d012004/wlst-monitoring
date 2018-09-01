@@ -1,0 +1,7 @@
+connect('weblogic','welcome1','t3://localhost:8001')
+edit()
+startEdit()
+cd('Clusters/wlsCluster')
+set('MessageOrderingEnabled','true')
+save()
+activate()

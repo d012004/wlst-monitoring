@@ -1,0 +1,12 @@
+servers=['dcammw01','dcammw02','dcammw03','dcammw04','dcammw05','dcammw06']
+pools=['myDS1','myDS2','myDS3']
+connect('system','password','t3://p2cam1a1:2040')
+domainRuntime()
+for i in [0,1,2,3,4,5]:
+ cd('/ServerRuntimes/'+servers[i]+'/JDBCServiceRuntime/'+servers[i]+'/JDBCDataSourceRuntimeMBeans/pools[0]')
+ cd('/ServerRuntimes/'+servers[i]+'/JDBCServiceRuntime/'+servers[i]+'/JDBCDataSourceRuntimeMBeans/pools[1]')
+ cd('/ServerRuntimes/'+servers[i]+'/JDBCServiceRuntime/'+servers[i]+'/JDBCDataSourceRuntimeMBeans/pools[2]')
+ cmo.reset()
+print 'Done Resetting the Data Source'
+exit()
+
